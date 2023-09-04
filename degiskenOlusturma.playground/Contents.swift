@@ -14,9 +14,6 @@ print(ogrenciYas)
 print(ogrenciBasharf)
 print(ogrenciDevamEdiyorMu)
 
-print( "Adı : ",ogrenciAdi)
-
-
 var urun_id: Int = 3416
 var urun_adi: String = "Kol Saati"
 var urun_adet: Int = 100

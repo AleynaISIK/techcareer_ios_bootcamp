@@ -6,7 +6,7 @@ print("Şehir              : \(sehir)")
 let ulke = "Türkiye"
 print("Ülke               : \(ulke)")
 
-var telefon = 05530317472
+var telefon = "05530317472"
 print("Telefon            : \(telefon)")
 
 let postaKodu = 48000
@@ -15,7 +15,7 @@ print("Posta Kodu         : \(postaKodu)")
 var email = "aleynaisik100@gmail.com"
 print("E-mail             : \(email)")
 
-var meslek = "Ios Developer"
+var meslek = "IOS Developer"
 print("Meslek             : \(meslek)")
 
 let stokMiktari = 200
@@ -66,14 +66,14 @@ print("Oda Sayısı         : \(odaSayisi)")
 let enlem = "37° 12'"
 print("Muğla Enlemi       : \(enlem) Kuzey enlemleri")
 
-let boylam = " 28° 21'"
+let boylam = "28° 21'"
 print("Muğla Boylamı      : \(boylam) Doğu boylamları")
 
 var urunAdi = "Telefon"
 print("Ürün Adı           : \(urunAdi)")
 
 var yemekFiyati = 485
-print("Yemek Fiyatı       : \(yemekFiyati)")
+print("Yemek Fiyatı       : \(yemekFiyati) ₺")
 
 var marka = "Gucci"
 print("Marka              : \(marka)")
