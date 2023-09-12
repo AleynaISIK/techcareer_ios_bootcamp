@@ -93,3 +93,57 @@ hayvan.sesCikar() //Kalıtım yok, kendi metoduna erişti.
 memeli.sesCikar() // Kalıtım var, üst sınıfın metoduna erişti
 kedi.sesCikar() // Kalıtım var, kendi metoduna erişti
 kopek.sesCikar() // Kalıtım var, kendi metoduna erişti
+
+
+// MARK: Protokol : javada interface olarak bilinir. protokoller 1 den fazla olabilir. bir sınıfı birden fazla protocol alabilir.
+
+//PROTOCOL - Interface
+
+protocol MyProtocol{
+  var degisken : Int{ get set }
+  
+  func metod()
+  func metod2() -> String
+}
+
+class ClassA : MyProtocol {
+  
+  var degisken: Int = 10
+  
+  func metod() {
+    print("Metod1 çalıştı")
+  }
+  
+  func metod2() -> String {
+    return "Metod2 çalıştı"
+  }
+  
+  
+}
+
+let classA = ClassA()
+print(classA.degisken)
+classA.metod()
+print(classA.metod2())
+
+//Extension
+extension Int {
+  func carp(sayi: Int) -> Int {
+    return self * sayi
+  }
+}
+
+let sonuc = 5.carp(sayi: 3)
+print("Sonuç : \(sonuc)")
+
+//Closure : fonksiyon benzeri
+
+let ifade = {
+  print("Closure çalıştı")
+}
+
+ifade()
+
+//Collection Types : array, set, dictionary
+//Array ile set arasındaki fark sorulur. Çalışması çok benzer. set'in içerisine bir şeyler eklesekte içerisini karıştırır yani spotify a müzik eklediğimizi düşünelim bununla karışık çalar. 0 dan başlar index mekanızması var. 2. fark ise tekrar eklemeye izin vermez . 1 tane olabilir sadece.
+
