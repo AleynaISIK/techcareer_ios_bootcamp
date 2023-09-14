@@ -67,16 +67,62 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQK-3V-XMK">
+                                <rect key="frame" x="172" y="380.5" width="70.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" name="yaziRenk2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jq6-Ss-GuS">
+                                <rect key="frame" x="165" y="423" width="84.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" name="anaRenk"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meat lover, get ready to meet your pizza !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyU-OV-wr7">
+                                <rect key="frame" x="32" y="465.5" width="350" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" name="yaziRenk2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 5.98" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DF-di-O3F">
+                                <rect key="frame" x="16" y="784.5" width="116.5" height="45.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                <color key="textColor" name="anaRenk"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IE-dV-Es4">
+                                <rect key="frame" x="264" y="790" width="134" height="34.5"/>
+                                <color key="backgroundColor" name="anaRenk"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ADD TO CART"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="tyU-OV-wr7" firstAttribute="top" secondItem="Jq6-Ss-GuS" secondAttribute="bottom" constant="16" id="1U0-lB-OnR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tyU-OV-wr7" secondAttribute="trailing" constant="32" id="ACg-fT-q56"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1IE-dV-Es4" secondAttribute="trailing" constant="16" id="Dpl-R1-run"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2DF-di-O3F" secondAttribute="bottom" constant="32" id="E49-qG-RL7"/>
+                            <constraint firstItem="WQK-3V-XMK" firstAttribute="top" secondItem="cUe-8x-b6k" secondAttribute="bottom" constant="16" id="JuQ-Cm-ace"/>
+                            <constraint firstItem="Jq6-Ss-GuS" firstAttribute="top" secondItem="WQK-3V-XMK" secondAttribute="bottom" constant="16" id="L84-mt-ZGh"/>
+                            <constraint firstItem="tyU-OV-wr7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Luj-wr-bAv"/>
                             <constraint firstItem="cUe-8x-b6k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZkC-bF-ezT"/>
+                            <constraint firstItem="1IE-dV-Es4" firstAttribute="centerY" secondItem="2DF-di-O3F" secondAttribute="centerY" id="a97-AA-0uq"/>
                             <constraint firstItem="p9T-3C-NgZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aCh-fL-PuQ"/>
+                            <constraint firstItem="Jq6-Ss-GuS" firstAttribute="centerX" secondItem="WQK-3V-XMK" secondAttribute="centerX" id="bMR-oU-fqp"/>
                             <constraint firstItem="cUe-8x-b6k" firstAttribute="top" secondItem="p9T-3C-NgZ" secondAttribute="bottom" constant="16" id="hFQ-p9-myE"/>
                             <constraint firstItem="p9T-3C-NgZ" firstAttribute="top" secondItem="xpf-E5-mDR" secondAttribute="bottom" constant="16" id="k9v-K3-GVP"/>
+                            <constraint firstItem="2DF-di-O3F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kNl-KF-tgk"/>
                             <constraint firstItem="xpf-E5-mDR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="mg1-CR-ahl"/>
                             <constraint firstItem="xpf-E5-mDR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sqo-dz-Akg"/>
+                            <constraint firstItem="WQK-3V-XMK" firstAttribute="top" secondItem="cUe-8x-b6k" secondAttribute="bottom" constant="16" id="ts1-x9-tx6"/>
+                            <constraint firstItem="WQK-3V-XMK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zvf-S2-umc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X8j-3W-7kB"/>
@@ -111,6 +157,9 @@
         </namedColor>
         <namedColor name="yaziRenk1">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yaziRenk2">
+            <color red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

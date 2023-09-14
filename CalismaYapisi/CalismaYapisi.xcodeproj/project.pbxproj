@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD90FC212AB0CC890037027A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90FC202AB0CC890037027A /* AppDelegate.swift */; };
-		AD90FC232AB0CC890037027A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90FC222AB0CC890037027A /* SceneDelegate.swift */; };
-		AD90FC252AB0CC890037027A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90FC242AB0CC890037027A /* ViewController.swift */; };
-		AD90FC282AB0CC890037027A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD90FC262AB0CC890037027A /* Main.storyboard */; };
-		AD90FC2A2AB0CC8F0037027A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD90FC292AB0CC8F0037027A /* Assets.xcassets */; };
-		AD90FC2D2AB0CC8F0037027A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD90FC2B2AB0CC8F0037027A /* LaunchScreen.storyboard */; };
-		ADDE00222AB0E1F8009C2AD9 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADDE00212AB0E1F8009C2AD9 /* Pacifico-Regular.ttf */; };
+		ADDE00322AB377FD009C2AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE00312AB377FD009C2AD9 /* AppDelegate.swift */; };
+		ADDE00342AB377FD009C2AD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE00332AB377FD009C2AD9 /* SceneDelegate.swift */; };
+		ADDE00362AB377FD009C2AD9 /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE00352AB377FD009C2AD9 /* Anasayfa.swift */; };
+		ADDE00392AB377FD009C2AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDE00372AB377FD009C2AD9 /* Main.storyboard */; };
+		ADDE003B2AB37801009C2AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDE003A2AB37801009C2AD9 /* Assets.xcassets */; };
+		ADDE003E2AB37801009C2AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDE003C2AB37801009C2AD9 /* LaunchScreen.storyboard */; };
+		ADDE00462AB37D3B009C2AD9 /* OyunEkrani.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE00452AB37D3B009C2AD9 /* OyunEkrani.swift */; };
+		ADDE00482AB37DB8009C2AD9 /* SonucEkrani.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE00472AB37DB8009C2AD9 /* SonucEkrani.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD90FC1D2AB0CC890037027A /* TasarimCalismasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasarimCalismasi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD90FC202AB0CC890037027A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD90FC222AB0CC890037027A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD90FC242AB0CC890037027A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AD90FC272AB0CC890037027A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AD90FC292AB0CC8F0037027A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AD90FC2C2AB0CC8F0037027A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AD90FC2E2AB0CC8F0037027A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADDE00212AB0E1F8009C2AD9 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
-		ADDE00232AB36DB9009C2AD9 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
-		ADDE00242AB36DBA009C2AD9 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		ADDE002E2AB377FD009C2AD9 /* CalismaYapisi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalismaYapisi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADDE00312AB377FD009C2AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADDE00332AB377FD009C2AD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ADDE00352AB377FD009C2AD9 /* Anasayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anasayfa.swift; sourceTree = "<group>"; };
+		ADDE00382AB377FD009C2AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADDE003A2AB37801009C2AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADDE003D2AB37801009C2AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADDE003F2AB37801009C2AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADDE00452AB37D3B009C2AD9 /* OyunEkrani.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyunEkrani.swift; sourceTree = "<group>"; };
+		ADDE00472AB37DB8009C2AD9 /* SonucEkrani.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonucEkrani.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AD90FC1A2AB0CC890037027A /* Frameworks */ = {
+		ADDE002B2AB377FD009C2AD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,141 +41,132 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD90FC142AB0CC880037027A = {
+		ADDE00252AB377FD009C2AD9 = {
 			isa = PBXGroup;
 			children = (
-				AD90FC1F2AB0CC890037027A /* TasarimCalismasi */,
-				AD90FC1E2AB0CC890037027A /* Products */,
+				ADDE00302AB377FD009C2AD9 /* CalismaYapisi */,
+				ADDE002F2AB377FD009C2AD9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AD90FC1E2AB0CC890037027A /* Products */ = {
+		ADDE002F2AB377FD009C2AD9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD90FC1D2AB0CC890037027A /* TasarimCalismasi.app */,
+				ADDE002E2AB377FD009C2AD9 /* CalismaYapisi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD90FC1F2AB0CC890037027A /* TasarimCalismasi */ = {
+		ADDE00302AB377FD009C2AD9 /* CalismaYapisi */ = {
 			isa = PBXGroup;
 			children = (
-				AD90FC202AB0CC890037027A /* AppDelegate.swift */,
-				AD90FC222AB0CC890037027A /* SceneDelegate.swift */,
-				AD90FC242AB0CC890037027A /* ViewController.swift */,
-				AD90FC262AB0CC890037027A /* Main.storyboard */,
-				AD90FC292AB0CC8F0037027A /* Assets.xcassets */,
-				AD90FC2B2AB0CC8F0037027A /* LaunchScreen.storyboard */,
-				AD90FC2E2AB0CC8F0037027A /* Info.plist */,
-				ADDE00202AB0E1B4009C2AD9 /* Fonts */,
+				ADDE00312AB377FD009C2AD9 /* AppDelegate.swift */,
+				ADDE00332AB377FD009C2AD9 /* SceneDelegate.swift */,
+				ADDE00352AB377FD009C2AD9 /* Anasayfa.swift */,
+				ADDE00452AB37D3B009C2AD9 /* OyunEkrani.swift */,
+				ADDE00472AB37DB8009C2AD9 /* SonucEkrani.swift */,
+				ADDE00372AB377FD009C2AD9 /* Main.storyboard */,
+				ADDE003A2AB37801009C2AD9 /* Assets.xcassets */,
+				ADDE003C2AB37801009C2AD9 /* LaunchScreen.storyboard */,
+				ADDE003F2AB37801009C2AD9 /* Info.plist */,
 			);
-			path = TasarimCalismasi;
-			sourceTree = "<group>";
-		};
-		ADDE00202AB0E1B4009C2AD9 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				ADDE00212AB0E1F8009C2AD9 /* Pacifico-Regular.ttf */,
-			);
-			path = Fonts;
+			path = CalismaYapisi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD90FC1C2AB0CC890037027A /* TasarimCalismasi */ = {
+		ADDE002D2AB377FD009C2AD9 /* CalismaYapisi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD90FC312AB0CC8F0037027A /* Build configuration list for PBXNativeTarget "TasarimCalismasi" */;
+			buildConfigurationList = ADDE00422AB37801009C2AD9 /* Build configuration list for PBXNativeTarget "CalismaYapisi" */;
 			buildPhases = (
-				AD90FC192AB0CC890037027A /* Sources */,
-				AD90FC1A2AB0CC890037027A /* Frameworks */,
-				AD90FC1B2AB0CC890037027A /* Resources */,
+				ADDE002A2AB377FD009C2AD9 /* Sources */,
+				ADDE002B2AB377FD009C2AD9 /* Frameworks */,
+				ADDE002C2AB377FD009C2AD9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TasarimCalismasi;
-			productName = TasarimCalismasi;
-			productReference = AD90FC1D2AB0CC890037027A /* TasarimCalismasi.app */;
+			name = CalismaYapisi;
+			productName = CalismaYapisi;
+			productReference = ADDE002E2AB377FD009C2AD9 /* CalismaYapisi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AD90FC152AB0CC880037027A /* Project object */ = {
+		ADDE00262AB377FD009C2AD9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					AD90FC1C2AB0CC890037027A = {
+					ADDE002D2AB377FD009C2AD9 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = AD90FC182AB0CC880037027A /* Build configuration list for PBXProject "TasarimCalismasi" */;
+			buildConfigurationList = ADDE00292AB377FD009C2AD9 /* Build configuration list for PBXProject "CalismaYapisi" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
-				tr,
 			);
-			mainGroup = AD90FC142AB0CC880037027A;
-			productRefGroup = AD90FC1E2AB0CC890037027A /* Products */;
+			mainGroup = ADDE00252AB377FD009C2AD9;
+			productRefGroup = ADDE002F2AB377FD009C2AD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD90FC1C2AB0CC890037027A /* TasarimCalismasi */,
+				ADDE002D2AB377FD009C2AD9 /* CalismaYapisi */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AD90FC1B2AB0CC890037027A /* Resources */ = {
+		ADDE002C2AB377FD009C2AD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD90FC2D2AB0CC8F0037027A /* LaunchScreen.storyboard in Resources */,
-				ADDE00222AB0E1F8009C2AD9 /* Pacifico-Regular.ttf in Resources */,
-				AD90FC2A2AB0CC8F0037027A /* Assets.xcassets in Resources */,
-				AD90FC282AB0CC890037027A /* Main.storyboard in Resources */,
+				ADDE003E2AB37801009C2AD9 /* LaunchScreen.storyboard in Resources */,
+				ADDE003B2AB37801009C2AD9 /* Assets.xcassets in Resources */,
+				ADDE00392AB377FD009C2AD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AD90FC192AB0CC890037027A /* Sources */ = {
+		ADDE002A2AB377FD009C2AD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD90FC252AB0CC890037027A /* ViewController.swift in Sources */,
-				AD90FC212AB0CC890037027A /* AppDelegate.swift in Sources */,
-				AD90FC232AB0CC890037027A /* SceneDelegate.swift in Sources */,
+				ADDE00462AB37D3B009C2AD9 /* OyunEkrani.swift in Sources */,
+				ADDE00362AB377FD009C2AD9 /* Anasayfa.swift in Sources */,
+				ADDE00322AB377FD009C2AD9 /* AppDelegate.swift in Sources */,
+				ADDE00482AB37DB8009C2AD9 /* SonucEkrani.swift in Sources */,
+				ADDE00342AB377FD009C2AD9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AD90FC262AB0CC890037027A /* Main.storyboard */ = {
+		ADDE00372AB377FD009C2AD9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AD90FC272AB0CC890037027A /* Base */,
-				ADDE00232AB36DB9009C2AD9 /* tr */,
+				ADDE00382AB377FD009C2AD9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		AD90FC2B2AB0CC8F0037027A /* LaunchScreen.storyboard */ = {
+		ADDE003C2AB37801009C2AD9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AD90FC2C2AB0CC8F0037027A /* Base */,
-				ADDE00242AB36DBA009C2AD9 /* tr */,
+				ADDE003D2AB37801009C2AD9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -183,11 +174,10 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AD90FC2F2AB0CC8F0037027A /* Debug */ = {
+		ADDE00402AB37801009C2AD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -244,11 +234,10 @@
 			};
 			name = Debug;
 		};
-		AD90FC302AB0CC8F0037027A /* Release */ = {
+		ADDE00412AB37801009C2AD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -299,7 +288,7 @@
 			};
 			name = Release;
 		};
-		AD90FC322AB0CC8F0037027A /* Debug */ = {
+		ADDE00432AB37801009C2AD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -308,8 +297,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8RSY84R794;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TasarimCalismasi/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Pizza;
+				INFOPLIST_FILE = CalismaYapisi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Aleyna.TasarimCalismasi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Aleyna.CalismaYapisi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -328,7 +316,7 @@
 			};
 			name = Debug;
 		};
-		AD90FC332AB0CC8F0037027A /* Release */ = {
+		ADDE00442AB37801009C2AD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -337,8 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8RSY84R794;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TasarimCalismasi/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Pizza;
+				INFOPLIST_FILE = CalismaYapisi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -349,7 +336,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Aleyna.TasarimCalismasi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Aleyna.CalismaYapisi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -360,25 +347,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD90FC182AB0CC880037027A /* Build configuration list for PBXProject "TasarimCalismasi" */ = {
+		ADDE00292AB377FD009C2AD9 /* Build configuration list for PBXProject "CalismaYapisi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD90FC2F2AB0CC8F0037027A /* Debug */,
-				AD90FC302AB0CC8F0037027A /* Release */,
+				ADDE00402AB37801009C2AD9 /* Debug */,
+				ADDE00412AB37801009C2AD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD90FC312AB0CC8F0037027A /* Build configuration list for PBXNativeTarget "TasarimCalismasi" */ = {
+		ADDE00422AB37801009C2AD9 /* Build configuration list for PBXNativeTarget "CalismaYapisi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD90FC322AB0CC8F0037027A /* Debug */,
-				AD90FC332AB0CC8F0037027A /* Release */,
+				ADDE00432AB37801009C2AD9 /* Debug */,
+				ADDE00442AB37801009C2AD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AD90FC152AB0CC880037027A /* Project object */;
+	rootObject = ADDE00262AB377FD009C2AD9 /* Project object */;
 }

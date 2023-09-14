@@ -27,6 +27,9 @@ class ViewController: UIViewController {
 //    gezinme çubuğunun kaydırma kenarı görünümünü yapılandırır. Bu görünüm, özellikle ekranın üstünden aşağı kaydırıldığında gezinme çubuğunun nasıl görüneceğini belirler.
     navigationController?.navigationBar.scrollEdgeAppearance = appereance
     
+    
+//    Left - leading - start
+//    Right - trailing -
   }
   
 }
