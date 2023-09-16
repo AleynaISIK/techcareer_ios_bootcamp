@@ -34,5 +34,6 @@ class Anasayfa: UIViewController {
     print("prepare metodu çalıştı.")
   }
   
+  
 }
 

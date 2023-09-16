@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "Monstera Adansonii "; ObjectID = "6yZ-FW-WTP"; */
+"6yZ-FW-WTP.text" = "Monstera Adansonii ";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Gju-b6-uyX"; */
+"Gju-b6-uyX.text" = "0";
+
+/* Class = "UILabel"; text = "Information about your plant"; ObjectID = "HBL-Gg-TCJ"; */
+"HBL-Gg-TCJ.text" = "Information about your plant";
+
+/* Class = "UILabel"; text = "Humidify"; ObjectID = "ODg-R2-aMf"; */
+"ODg-R2-aMf.text" = "Humidify";
+
+/* Class = "UILabel"; text = "18 - 30  °C"; ObjectID = "Re9-Z1-bQy"; */
+"Re9-Z1-bQy.text" = "18 - 30  °C";
+
+/* Class = "UILabel"; text = "50 %"; ObjectID = "f9n-kU-Vdf"; */
+"f9n-kU-Vdf.text" = "50 %";
+
+/* Class = "UIButton"; configuration.title = "+"; ObjectID = "fF7-8L-cG0"; */
+"fF7-8L-cG0.configuration.title" = "+";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fF7-8L-cG0"; */
+"fF7-8L-cG0.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gik-1Q-ncC"; */
+"gik-1Q-ncC.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Buy Now"; ObjectID = "lcH-lR-uUq"; */
+"lcH-lR-uUq.normalTitle" = "Buy Now";
+
+/* Class = "UILabel"; text = "Sunlight"; ObjectID = "m1X-7j-Om4"; */
+"m1X-7j-Om4.text" = "Sunlight";
+
+/* Class = "UIButton"; configuration.title = "-"; ObjectID = "qLB-J3-IcR"; */
+"qLB-J3-IcR.configuration.title" = "-";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qLB-J3-IcR"; */
+"qLB-J3-IcR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Monstera adansonii is an indoor climbing plant belonging to the Araceae family, known for its striking foliage. This plant particularly stands out due to its large and perforated leaves, and it is commonly referred to as the \"Swiss cheese vine\" or \"monkey mask plant\" because of these distinctive leaves."; ObjectID = "xKe-aV-lF9"; */
+"xKe-aV-lF9.text" = "Monstera adansonii is an indoor climbing plant belonging to the Araceae family, known for its striking foliage. This plant particularly stands out due to its large and perforated leaves, and it is commonly referred to as the \"Swiss cheese vine\" or \"monkey mask plant\" because of these distinctive leaves.";

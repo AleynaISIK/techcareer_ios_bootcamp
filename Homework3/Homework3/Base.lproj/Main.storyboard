@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MrM-qc-Jcw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monsteraAdansonii " translatesAutoresizingMaskIntoConstraints="NO" id="YBS-bu-IPn">
+                                <rect key="frame" x="20" y="108" width="374" height="276"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="276" id="bc0-Oz-iqj"/>
+                                    <constraint firstAttribute="width" constant="374" id="yfi-Yf-Zde"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information about your plant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBL-Gg-TCJ">
+                                <rect key="frame" x="20" y="546.5" width="374" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKe-aV-lF9">
+                                <rect key="frame" x="20" y="573.5" width="374" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="188" id="PkF-Xe-yNc"/>
+                                    <constraint firstAttribute="width" constant="374" id="moo-eL-ckJ"/>
+                                </constraints>
+                                <string key="text">Monstera adansonii is an indoor climbing plant belonging to the Araceae family, known for its striking foliage. This plant particularly stands out due to its large and perforated leaves, and it is commonly referred to as the "Swiss cheese vine" or "monkey mask plant" because of these distinctive leaves.</string>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" name="yaziRenk1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="GAC-No-tlI">
+                                <rect key="frame" x="289.5" y="404" width="104.5" height="34.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF7-8L-cG0">
+                                        <rect key="frame" x="0.0" y="0.0" width="34.5" height="34.5"/>
+                                        <color key="backgroundColor" red="0.99252682920000002" green="0.74797308439999999" blue="0.56532585619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+" buttonSize="medium"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="plus_button_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SjQ-h8-Gat"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gju-b6-uyX">
+                                        <rect key="frame" x="48.5" y="0.0" width="10" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLB-J3-IcR">
+                                        <rect key="frame" x="72.5" y="0.0" width="32" height="34.5"/>
+                                        <color key="backgroundColor" red="0.99252682920000002" green="0.74797308439999999" blue="0.56532585619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="-" buttonSize="medium"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="minus_button_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eYk-ep-x4Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98438459629999997" green="0.98791199919999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gik-1Q-ncC">
+                                <rect key="frame" x="20" y="782" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="J6O-xC-BlT"/>
+                                    <constraint firstAttribute="height" constant="48" id="myT-Sv-TUh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="shop"/>
+                                <connections>
+                                    <action selector="add_to_cart_button_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7xN-j0-LSp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcH-lR-uUq">
+                                <rect key="frame" x="84" y="782" width="310" height="48"/>
+                                <color key="backgroundColor" name="anaRenk"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="I9z-26-Kjc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <color key="tintColor" red="0.98438459629999997" green="0.98791199919999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Buy Now"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buy_now_button_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F1G-wJ-dMi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monstera Adansonii " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yZ-FW-WTP">
+                                <rect key="frame" x="20" y="410" width="166" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9p-ng-GTI">
+                                <rect key="frame" x="20" y="458.5" width="374" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9n-kU-Vdf">
+                                        <rect key="frame" x="256" y="34" width="66" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Humudify" translatesAutoresizingMaskIntoConstraints="NO" id="wqe-5e-kwf">
+                                        <rect key="frame" x="192" y="10" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="18 - 30  °C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re9-Z1-bQy">
+                                        <rect key="frame" x="64" y="35" width="91" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sunlight" translatesAutoresizingMaskIntoConstraints="NO" id="BnZ-QI-oCJ">
+                                        <rect key="frame" x="0.0" y="10" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Humidify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-R2-aMf">
+                                        <rect key="frame" x="256" y="10" width="66" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                        <color key="textColor" name="yaziRenk1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1X-7j-Om4">
+                                        <rect key="frame" x="64" y="11" width="91" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                        <color key="textColor" name="yaziRenk1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="Cl7-un-M8V"/>
+                                    <constraint firstAttribute="height" constant="68" id="Wn0-Jg-m5Z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98438459629999997" green="0.98791199919999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YBS-bu-IPn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4Uh-Nt-BhU"/>
+                            <constraint firstItem="xKe-aV-lF9" firstAttribute="top" secondItem="HBL-Gg-TCJ" secondAttribute="bottom" constant="4" id="7Kr-Wi-F1j"/>
+                            <constraint firstItem="gik-1Q-ncC" firstAttribute="leading" secondItem="xKe-aV-lF9" secondAttribute="leading" id="7aE-fv-yaC"/>
+                            <constraint firstItem="p9p-ng-GTI" firstAttribute="leading" secondItem="6yZ-FW-WTP" secondAttribute="leading" id="Ev3-MI-upp"/>
+                            <constraint firstItem="YBS-bu-IPn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QC6-m1-Awb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gik-1Q-ncC" secondAttribute="bottom" constant="32" id="S9R-yJ-DDI"/>
+                            <constraint firstItem="HBL-Gg-TCJ" firstAttribute="top" secondItem="p9p-ng-GTI" secondAttribute="bottom" constant="20" id="SyX-Ar-MK1"/>
+                            <constraint firstItem="HBL-Gg-TCJ" firstAttribute="leading" secondItem="p9p-ng-GTI" secondAttribute="leading" id="XzJ-64-4B4"/>
+                            <constraint firstItem="p9p-ng-GTI" firstAttribute="top" secondItem="GAC-No-tlI" secondAttribute="bottom" constant="20" id="acF-xB-WqM"/>
+                            <constraint firstItem="GAC-No-tlI" firstAttribute="trailing" secondItem="YBS-bu-IPn" secondAttribute="trailing" id="dyX-Bi-XFb"/>
+                            <constraint firstItem="6yZ-FW-WTP" firstAttribute="leading" secondItem="YBS-bu-IPn" secondAttribute="leading" id="ejV-IX-yGV"/>
+                            <constraint firstItem="YBS-bu-IPn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="fVM-wK-jQ7"/>
+                            <constraint firstItem="GAC-No-tlI" firstAttribute="top" secondItem="YBS-bu-IPn" secondAttribute="bottom" constant="20" id="gVq-W6-UL2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YBS-bu-IPn" secondAttribute="trailing" constant="20" id="jio-vo-q79"/>
+                            <constraint firstItem="lcH-lR-uUq" firstAttribute="leading" secondItem="gik-1Q-ncC" secondAttribute="trailing" constant="16" id="mGo-EZ-gYP"/>
+                            <constraint firstItem="lcH-lR-uUq" firstAttribute="centerY" secondItem="gik-1Q-ncC" secondAttribute="centerY" id="mK1-Re-hAG"/>
+                            <constraint firstItem="lcH-lR-uUq" firstAttribute="trailing" secondItem="xKe-aV-lF9" secondAttribute="trailing" id="oSH-Wk-s0Y"/>
+                            <constraint firstItem="6yZ-FW-WTP" firstAttribute="centerY" secondItem="GAC-No-tlI" secondAttribute="centerY" id="uuz-zA-KrJ"/>
+                            <constraint firstItem="HBL-Gg-TCJ" firstAttribute="trailing" secondItem="p9p-ng-GTI" secondAttribute="trailing" id="w8V-JI-zXa"/>
+                            <constraint firstItem="gik-1Q-ncC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yZW-XR-rd5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MaN-yW-jAS"/>
+                    <connections>
+                        <outlet property="number_label_outlet" destination="Gju-b6-uyX" id="23q-aK-4nz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="3.3482142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mPg-WM-Chg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MrM-qc-Jcw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ml6-za-gTF">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NjW-h5-rHu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lK-Fd-qRj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Humudify" width="48" height="48"/>
+        <image name="Sunlight" width="48" height="48"/>
+        <image name="monsteraAdansonii " width="6240" height="4160"/>
+        <image name="shop" width="48" height="48"/>
+        <namedColor name="anaRenk">
+            <color red="0.63529411764705879" green="0.70980392156862748" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yaziRenk1">
+            <color red="0.67843137254901964" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
