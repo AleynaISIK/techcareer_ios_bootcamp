@@ -11,10 +11,16 @@ class OyunEkrani: UIViewController {
   
   @IBOutlet weak var labelOyunEkrani: UILabel!
   
+  var kisiNesnesi: Kisiler?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     labelOyunEkrani.text = "Merhaba"
+    
+    if let  k = kisiNesnesi{
+      labelOyunEkrani.text = "\(k.ad!) - \(k.yas!) - \(k.boy!) - \(k.bekar!)"
+    }
   }
   
   @IBAction func buttonGeri(_ sender: Any) {
@@ -26,5 +32,6 @@ class OyunEkrani: UIViewController {
   @IBAction func buttonBitti(_ sender: Any) {
     
     performSegue(withIdentifier: "sonucEkraninaGecis", sender: nil)
+    
   }
 }

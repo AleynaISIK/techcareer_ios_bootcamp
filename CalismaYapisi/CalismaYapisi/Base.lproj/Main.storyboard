@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anasayfa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhU-JD-ed0">
-                                <rect key="frame" x="108" y="124" width="198" height="60"/>
+                                <rect key="frame" x="108" y="158" width="198" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +50,21 @@
                             <constraint firstItem="DhU-JD-ed0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v8r-8E-prM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hM8-Bx-KdL"/>
+                    <navigationItem key="navigationItem" title="Anasayfa" prompt="Açıklama" id="hM8-Bx-KdL">
+                        <barButtonItem key="backBarButtonItem" title="XXX" id="QtQ-GV-1mC"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="Yh5-Hh-n8P">
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="buttonEkle:" destination="BYZ-38-t0r" id="QNa-ak-cBS"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Çıkış" id="GJI-qu-QeW">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="buttonCikis:" destination="BYZ-38-t0r" id="2zw-N6-rzv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="labelAnasayfa" destination="DhU-JD-ed0" id="2bO-LW-J2A"/>
                         <segue destination="sGM-h7-ESS" kind="show" identifier="oyunEkraninaGecis" id="pO9-CM-V32"/>
@@ -180,6 +194,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
