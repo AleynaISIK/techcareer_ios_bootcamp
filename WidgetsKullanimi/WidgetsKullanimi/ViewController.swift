@@ -15,6 +15,19 @@ class ViewController: UIViewController {
   @IBOutlet weak var mSwitch: UISwitch!
   @IBOutlet weak var labelSwitch: UILabel!
   
+  @IBOutlet weak var segmentedControl: UISegmentedControl!
+  @IBOutlet weak var labelSegmented: UILabel!
+  
+  
+  @IBOutlet weak var slider: UISlider!
+  @IBOutlet weak var labelSlider: UILabel!
+  
+  
+  @IBOutlet weak var stepper: UIStepper!
+  @IBOutlet weak var labelStepper: UILabel!
+  
+  @IBOutlet weak var indicator: UIActivityIndicatorView!
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -24,13 +37,23 @@ class ViewController: UIViewController {
       labelSwitch.text = "Kapalı"
 
     }
+    
+    let secilenIndeks = segmentedControl.selectedSegmentIndex
+    let secilenKategori = segmentedControl.titleForSegment(at: secilenIndeks)
+    labelSegmented.text = "Seçim: \(secilenKategori!)"
+    
+    labelSlider.text = String(Int(slider.value))
+        
+    labelStepper.text = String(Int(stepper.value))
+    
+    indicator.isHidden = true
+
   }
   
   @IBAction func buttonOku(_ sender: Any) {
     if let alinanVeri = textFieldGirdi.text {
       labelSonuc.text = alinanVeri
     }
-    labelSonuc.text = "Veri girmediniz"
   }
   
   @IBAction func buttonMutlu(_ sender: Any) {
@@ -50,9 +73,46 @@ class ViewController: UIViewController {
 
     }
   }
+  @IBAction func segmentedDegisimAction(_ sender: UISegmentedControl) {
+    let secilenIndeks = sender.selectedSegmentIndex
+    let secilenKategori = sender.titleForSegment(at: secilenIndeks)
+    labelSegmented.text = "Seçim: \(secilenKategori!)"
+
+  
+
+  }
+  
+  @IBAction func sliderDegisimAction(_ sender: UISlider) {
+    labelSlider.text = String(Int(sender.value))
+    
+    
+  }
+  
+  @IBAction func stepperDegisimAction(_ sender: UIStepper) {
+    
+    labelStepper.text = String(Int(sender.value))
+    
+  }
+  
+  @IBAction func buttonBasla(_ sender: Any) {
+    indicator.isHidden = false
+    indicator.startAnimating()
+  }
+  
+  @IBAction func buttonDur(_ sender: Any) {
+    indicator.isHidden = true
+    indicator.stopAnimating()
+  }
+  
   
   @IBAction func buttonGoster(_ sender: Any) {
     print("Switch durumu : \(mSwitch.isOn)")
+    let secilenIndeks = segmentedControl.selectedSegmentIndex
+    let secilenKategori = segmentedControl.titleForSegment(at: secilenIndeks)
+    print("Seçilen : \(secilenKategori!)")
+    print("Slider  :  \(slider.value)")
+    print("Stepper  :  \(stepper.value)")
+
   }
   
   
