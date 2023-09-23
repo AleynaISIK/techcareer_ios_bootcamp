@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UIViewController {
   
   @IBOutlet weak var resultLabel: UILabel!
-  
   @IBOutlet weak var historyLabel: UILabel!
   
   var currentInput = ""
@@ -18,11 +17,9 @@ class ViewController: UIViewController {
   var operation = ""
   var history = ""
   
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     resultLabel.text = "0"
-
   }
   
   @IBAction func numberButton(_ sender: UIButton) {
@@ -40,8 +37,6 @@ class ViewController: UIViewController {
       resultLabel.text = currentInput
       history += "."
       historyLabel.text = history
-
-      
     }
   }
   
@@ -52,8 +47,6 @@ class ViewController: UIViewController {
     resultLabel.text = "0"
     history = ""
     historyLabel.text = history
-
-    
   }
   
   @IBAction func operationButton(_ sender: UIButton) {
@@ -91,16 +84,15 @@ class ViewController: UIViewController {
     }
     
     history += " \(operation) "
-    
     resultLabel.text = String(firstNumber)
     historyLabel.text = history
-
+    
   }
+  
   @IBAction func equalsButton(_ sender: UIButton) {
     operationButton(sender)
     operation = ""
     print(history)
-    
   }
   
   @IBAction func deleteButton(_ sender: UIButton) {
@@ -109,8 +101,7 @@ class ViewController: UIViewController {
       history.removeLast()
       resultLabel.text = currentInput
       historyLabel.text = history
-
+      
     }
   }
-  
 }
