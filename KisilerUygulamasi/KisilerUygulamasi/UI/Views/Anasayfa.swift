@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class Anasayfa: UIViewController {
   
@@ -14,23 +15,30 @@ class Anasayfa: UIViewController {
   
   var kisilerListesi = [Kisiler]()
   
+  var viewModel = AnasayfaViewModel()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     searchBar.delegate = self //Anasayfa > UISearchBarDelegate
     kisilerTableView.delegate = self
     kisilerTableView.dataSource = self
     
-    let k1 = Kisiler(kisi_id: 1, kisi_ad: "Aleyna", kisi_tel: "23456")
-    let k2 = Kisiler(kisi_id: 2, kisi_ad: "Ali", kisi_tel: "1456")
-    let k3 = Kisiler(kisi_id: 3, kisi_ad: "Kasım", kisi_tel: "33444")
-    kisilerListesi.append(k1) //0.
-    kisilerListesi.append(k2) //1.
-    kisilerListesi.append(k3) //2.
+//    let k1 = Kisiler(kisi_id: 1, kisi_ad: "Aleyna", kisi_tel: "23456")
+//    let k2 = Kisiler(kisi_id: 2, kisi_ad: "Ali", kisi_tel: "1456")
+//    let k3 = Kisiler(kisi_id: 3, kisi_ad: "Kasım", kisi_tel: "33444")
+//    kisilerListesi.append(k1) //0.
+//    kisilerListesi.append(k2) //1.
+//    kisilerListesi.append(k3) //2.
     
-    
+    _ = viewModel.kisilerListesi.subscribe(onNext: { liste in
+      self.kisilerListesi = liste
+      self.kisilerTableView.reloadData()
+    })
+
   }
   
   override func viewWillAppear(_ animated: Bool) {
+    viewModel.kisileriYukle()
     print("Anasayfaya dönüldü")
   }
   
@@ -46,7 +54,8 @@ class Anasayfa: UIViewController {
 
 extension Anasayfa : UISearchBarDelegate {
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) { //delegati ekle text did change yaz.
-    print("Kişi Ara : \(searchText)")
+    viewModel.ara(aramaKelimesi: searchText)
+//    print("Kişi Ara : \(searchText)")
   }
 }
 
@@ -84,7 +93,7 @@ extension Anasayfa : UITableViewDelegate,UITableViewDataSource {
       let iptalAction = UIAlertAction(title: "İptal", style: .cancel)
       alert.addAction(iptalAction)
       let evetAction = UIAlertAction(title: "Evet", style: .destructive){action in
-        print("Kişi Sil  : \(kisi.kisi_id!)")
+        self.viewModel.sil(kisi_id: kisi.kisi_id!)
 
       }
       alert.addAction(evetAction)
