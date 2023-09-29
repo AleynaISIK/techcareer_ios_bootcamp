@@ -15,6 +15,7 @@ class AnasayfaViewModel{
 
   
   init(){
+    krepo.veritabaniKopyala()
     kisilerListesi = krepo.kisilerListesi
   }
   

@@ -12,6 +12,14 @@ class KisilerDaoRepository{ //Dao: Database Access Object
   
   var kisilerListesi = BehaviorSubject<[Kisiler]>(value: [Kisiler]())
   
+  let db : FMDatabase? //database e erişmek için..
+  
+  init(){
+    let hedefYol = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+    let veriTabaniURL = URL(fileURLWithPath: hedefYol).appendingPathComponent("rehber.sqlite")
+    db = FMDatabase(path: veriTabaniURL.path)
+  }
+  
   func kaydet(kisi_ad : String, kisi_tel: String){
     print("Kişi Kaydet : \(kisi_ad) - \(kisi_tel)")
     
@@ -31,13 +39,42 @@ class KisilerDaoRepository{ //Dao: Database Access Object
   }
   
   func kisileriYukle(){
+    
+    
+    db?.open()
+    
     var liste = [Kisiler]()
-    let k1 = Kisiler(kisi_id: 1, kisi_ad: "Aleyna", kisi_tel: "23456")
-    let k2 = Kisiler(kisi_id: 2, kisi_ad: "Ali", kisi_tel: "1456")
-    let k3 = Kisiler(kisi_id: 3, kisi_ad: "Kasım", kisi_tel: "33444")
-    liste.append(k1) //0.
-    liste.append(k2) //1.
-    liste.append(k3) //2.
-    kisilerListesi.onNext(liste)
+    
+    do{
+      let rs = try db!.executeQuery("SELECT * FROM kisiler", values: nil) //burda select sorgusu yapıyoruz
+      
+      while rs.next(){
+        let kisi_id = Int(rs.string(forColumn: "kisi_id"))!
+        let kisi_ad = rs.string(forColumn: "kisi_ad")!
+        let kisi_tel = rs.string(forColumn: "kisi_tel")!
+        
+        let kisi = Kisiler(kisi_id: kisi_id, kisi_ad: kisi_ad, kisi_tel: kisi_tel)
+        liste.append(kisi)
+      }
+      kisilerListesi.onNext(liste)
+
+    }catch{
+      print(error.localizedDescription)
+    }
+    db?.close()
+  }
+  
+  func veritabaniKopyala(){
+    let bundleYolu = Bundle.main.path(forResource: "rehber", ofType: ".sqlite") //veritabanı ismi ve yolu ile ulaştık.
+    let hedefYol = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+    let kopyalanacakYer = URL(fileURLWithPath: hedefYol).appendingPathComponent("rehber.sqlite") //hedef yola kullanılacak vt eklendi.
+    let fileManager = FileManager.default
+    if fileManager.fileExists(atPath: kopyalanacakYer.path){ //varsa kopyalamaz
+      print("Veritabanı zaten var")
+    }else{
+      do{
+        try fileManager.copyItem(atPath: bundleYolu!, toPath: kopyalanacakYer.path) //yoksa kopyalar
+      }catch{}
+    }
   }
 }
