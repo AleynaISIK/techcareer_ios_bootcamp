@@ -22,6 +22,8 @@
 		79B686DC2AC35515002F1A12 /* KisiKayitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B686DB2AC35515002F1A12 /* KisiKayitViewModel.swift */; };
 		79B686DE2AC3552F002F1A12 /* KisiDetayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B686DD2AC3552F002F1A12 /* KisiDetayViewModel.swift */; };
 		79B686E12AC355A8002F1A12 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 79B686E02AC355A8002F1A12 /* RxSwift */; };
+		AD401E9F2AC9E08A009DB4BF /* CRUDCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD401E9E2AC9E08A009DB4BF /* CRUDCevap.swift */; };
+		AD401EA12AC9E1A8009DB4BF /* KisilerCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD401EA02AC9E1A8009DB4BF /* KisilerCevap.swift */; };
 		ADF38CEB2AC5FCEC0057BC0D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADF38CE92AC5FCEC0057BC0D /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		79B686D92AC354F9002F1A12 /* AnasayfaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaViewModel.swift; sourceTree = "<group>"; };
 		79B686DB2AC35515002F1A12 /* KisiKayitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiKayitViewModel.swift; sourceTree = "<group>"; };
 		79B686DD2AC3552F002F1A12 /* KisiDetayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiDetayViewModel.swift; sourceTree = "<group>"; };
+		AD401E9E2AC9E08A009DB4BF /* CRUDCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDCevap.swift; sourceTree = "<group>"; };
+		AD401EA02AC9E1A8009DB4BF /* KisilerCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisilerCevap.swift; sourceTree = "<group>"; };
 		ADF38CEA2AC5FCEC0057BC0D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				79880E5B2ABCA96000D252ED /* Kisiler.swift */,
+				AD401E9E2AC9E08A009DB4BF /* CRUDCevap.swift */,
+				AD401EA02AC9E1A8009DB4BF /* KisilerCevap.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				79880E592ABCA43800D252ED /* KisiDetay.swift in Sources */,
 				79880E442ABCA2A600D252ED /* Anasayfa.swift in Sources */,
 				79B686D72AC354B7002F1A12 /* KisilerDaoRepository.swift in Sources */,
+				AD401EA12AC9E1A8009DB4BF /* KisilerCevap.swift in Sources */,
 				79B686DA2AC354F9002F1A12 /* AnasayfaViewModel.swift in Sources */,
 				79B686DE2AC3552F002F1A12 /* KisiDetayViewModel.swift in Sources */,
 				79880E402ABCA2A600D252ED /* AppDelegate.swift in Sources */,
@@ -241,6 +248,7 @@
 				79880E5C2ABCA96100D252ED /* Kisiler.swift in Sources */,
 				79B686DC2AC35515002F1A12 /* KisiKayitViewModel.swift in Sources */,
 				ADF38CEB2AC5FCEC0057BC0D /* Model.xcdatamodeld in Sources */,
+				AD401E9F2AC9E08A009DB4BF /* CRUDCevap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

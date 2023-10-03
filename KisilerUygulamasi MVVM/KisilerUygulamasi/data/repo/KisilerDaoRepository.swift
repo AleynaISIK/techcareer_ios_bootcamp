@@ -11,7 +11,8 @@ import CoreData
 
 class KisilerDaoRepository {//Dao : Database Access Object
     var kisilerListesi = BehaviorSubject<[KisilerModel]>(value: [KisilerModel]())
-    
+//http://kasimadalan.pe.hu/kisiler/tum_kisiler.php
+  
   let context = appDelegate.persistentContainer.viewContext
   
     func kaydet(kisi_ad:String,kisi_tel:String){
