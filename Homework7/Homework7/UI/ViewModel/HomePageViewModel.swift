@@ -12,6 +12,7 @@ class HomePageViewModel{
   
   var krepo = TaskDaoRepository()
   var taskList = BehaviorSubject<[Task]>(value: [Task]())
+  
   init(){
     krepo.copyDatabase()
     taskList = krepo.taskList

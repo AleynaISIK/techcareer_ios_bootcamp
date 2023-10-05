@@ -11,8 +11,8 @@ class AddTaskViewModel{
   
   var krepo = TaskDaoRepository()
   
-  func save(task_name:String){
-    krepo.save(task_name:task_name)
+  func save(task_name:String,task_title:String){
+    krepo.save(task_name:task_name,task_title:task_title)
   }
   
 }

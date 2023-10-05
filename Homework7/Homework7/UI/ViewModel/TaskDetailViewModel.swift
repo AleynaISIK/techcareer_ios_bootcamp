@@ -11,7 +11,7 @@ class TaskDetailViewModel{
   
   var krepo = TaskDaoRepository()
   
-  func update(task_id:Int,task_name:String){
-    krepo.update(task_id: task_id, task_name: task_name)
+  func update(task_id:Int,task_name:String,task_title:String){
+    krepo.update(task_id: task_id, task_name: task_name, task_title: task_title)
   }
 }

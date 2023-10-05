@@ -97,20 +97,28 @@ extension HomePageVC : UISearchBarDelegate {
 
 extension HomePageVC : UITableViewDelegate,UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return taskList.count //3
+    return taskList.count
   }
   
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { // 0,1,2
-    let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell") as! TaskTableViewCell
-    
-    let task = taskList[indexPath.row]
-    
-    cell.labelTaskName.text = task.task_name
-    cell.selectionStyle = .none
-    cell.backgroundColor = .clear
-    cell.backgroundViewOutlet.layer.cornerRadius = 12
-    //    cell.backgroundViewOutlet.backgroundColor = UIColor(named: "#F9D4B7")
-    return cell
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    if indexPath.isEmpty{
+      let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell") as! TaskTableViewCell
+      cell.backgroundColor = .red
+     print("TABLO BOŞ / Hocam db de verilerim olduğu için mi burası hiç çalışmıyor? Herhangi bir kayıt yokken de view atıp içine de imageview ve label ile kayıt bulunamadı ve herhangibir kayıt eklenmedi yazacaktım fakat yapamadım.")
+      return cell
+      
+    }else{
+      let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell") as! TaskTableViewCell
+      
+      let task = taskList[indexPath.row]
+      cell.labelTaskName.text = task.task_name
+      cell.labelTaskTitle.text = task.task_title
+      cell.selectionStyle = .none
+      cell.backgroundColor = .clear
+      cell.backgroundViewOutlet.layer.cornerRadius = 12
+      //    cell.backgroundViewOutlet.backgroundColor = UIColor(named: "#F9D4B7")
+      return cell
+    }
     
   }
   
