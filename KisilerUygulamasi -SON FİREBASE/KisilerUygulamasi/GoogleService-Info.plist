@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDS0iNTRN6HYxve2eyMv0VmUeDqFI99TcU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>74772124100</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.info.KisilerUygulamasi</string>
+	<key>PROJECT_ID</key>
+	<string>egitim-f5b8e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>egitim-f5b8e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:74772124100:ios:00e7b90f15bf6d2bd81491</string>
+</dict>
+</plist>
