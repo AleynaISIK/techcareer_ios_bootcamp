@@ -9,6 +9,7 @@ import UIKit
 import RxSwift
 
 class Anasayfa: UIViewController {
+  
     @IBOutlet weak var kisilerTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     

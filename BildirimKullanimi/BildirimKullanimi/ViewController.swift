@@ -12,8 +12,6 @@ class ViewController: UIViewController {
   
   var izinKontrol = false
   
-  
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
